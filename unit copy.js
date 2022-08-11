@@ -115,7 +115,7 @@ function searcher(id, city){
                     }
                 } 
 
-                const tax = (total * 0.11625) 
+                const tax = (total * taxPercentage) 
 
                 document.getElementById('acc-tax').textContent = '$' + Math.round(tax)
                 document.getElementById('acc-total-tax').textContent = '$' + Math.round( total + tax)
